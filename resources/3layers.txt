@@ -1,0 +1,5 @@
+Glass	0
+SiO2	50	 	 	 	 
+TiO2	60	 	 	 	 
+SiO2	70
+Glass	0
