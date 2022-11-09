@@ -23,7 +23,9 @@ The library can be called as follows:
 
 ```
 import pocal
-test = pocal.pocal(parameters)
+import os
+os.chdir('resources folder')
+test = pocal.pocal(r'3layers.txt',40,200,1500,1,600,False,None)
 ```
 
 
