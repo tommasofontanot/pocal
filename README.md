@@ -36,7 +36,11 @@ test = pocal.pocal(r'3layers.txt',40,200,1500,1,600,False,None)
 The prescription file represents the stacking of the materials. An example is shown below:
 
 +----Immersing Medium------+-Glass------------+
+
 +----Layer3----------------+-TiO2-------------+
+
 +----Layer2----------------+-SiO2-------------+
+
 +----Layer1----------------+-TiO2-------------+
+
 +----Substrate-------------+-Glass------------+
