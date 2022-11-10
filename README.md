@@ -25,6 +25,8 @@ The library can be called as follows:
 import pocal
 import os
 os.chdir('resources folder')
+#upload the prescription file(here 3layers.txt), angle of incidence, minimum wavelength, maximum wavelength, wavelength resolution, 
+#reference wavelength, optical thickness and type of refinement
 test = pocal.pocal(r'3layers.txt',40,200,1500,1,600,False,None)
 ```
 
