@@ -37,10 +37,14 @@ The prescription file represents the stacking of the materials. An example is sh
 
 +----Immersing Medium----+-Glass----------+
 
-+----Layer3----------------+-TiO2-------------+
++----Layer3----------------+-TiO2-------------50 nm+
 
-+----Layer2----------------+-SiO2-------------+
++----Layer2----------------+-SiO2-------------60 nm+
 
-+----Layer1----------------+-TiO2-------------+
++----Layer1----------------+-TiO2-------------70 nm+
 
 +----Substrate-------------+-Glass------------+
+
+
+To simulate the proposed design, the prescription text file must be written as follows:
+
