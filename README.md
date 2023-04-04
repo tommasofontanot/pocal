@@ -49,3 +49,8 @@ The prescription file represents the stacking of the materials. An example is sh
 To simulate the proposed design, the prescription text file must be written as follows:
 
 ![image](https://user-images.githubusercontent.com/18205576/229857312-8f7d8ce8-ad8e-46c9-bd0b-ce8e2bbe67c4.png)
+
+
+## **Python tutorial**
+
+An in-depth tutorial to use the library can be found here: [https://github.com/tommasofontanot/pocal/blob/main/Pocal.ipynb](POCAL)
