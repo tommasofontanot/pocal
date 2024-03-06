@@ -1,5 +1,7 @@
 # POCAL
 
+POCAL (Python Optical Coating Analysis Library) allows to easily design optical coatings both as single layer and as multilayer stack, monitoring a wide variety of optical properties and, moreover, giving the possibility to automatically refine the multilayer design to achieve the desired optical goals. The library is completely open source, and it can be easily coupled to several Python-based ray tracers or libraries to work on more complex simulations. The results have been extensively tested and are comparable with the ones obtained using commercial software.
+
 ## **Downloading POCAL**
 
 Downloading the library is very easy using pip :
