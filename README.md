@@ -21,7 +21,7 @@ os.chdir(resources folder)
 
 ## **Cite POCAL**
 
-If you use our library, do cite our paper published in Optics Continuum: [Fontanot, T., Bhaumik, U., Kishore, R. and Meuret, Y., 2023. POCAL: a Python-based library to perform optical coating analysis and design. Optics Continuum, 2(4), pp.810-824. DOI: https://doi.org/10.1364/OPTCON.484972](https://opg.optica.org/optcon/fulltext.cfm?uri=optcon-2-4-810&id=528721)
+If you use the library, please cite the paper published in Optics Continuum: [Fontanot, T., Bhaumik, U., Kishore, R. and Meuret, Y., 2023. POCAL: a Python-based library to perform optical coating analysis and design. Optics Continuum, 2(4), pp.810-824. DOI: https://doi.org/10.1364/OPTCON.484972](https://opg.optica.org/optcon/fulltext.cfm?uri=optcon-2-4-810&id=528721)
 
 ## **Using the library**
 
