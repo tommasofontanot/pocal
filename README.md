@@ -60,3 +60,7 @@ To simulate the proposed design, the prescription text file must be written as f
 ## **Python tutorial**
 
 An in-depth tutorial to use the library can be found here: [POCAL Tutorial](https://github.com/tommasofontanot/pocal/blob/main/Pocal.ipynb)
+
+## **License**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/tommasofontanot/pocal/blob/main/LICENSE.txt)
