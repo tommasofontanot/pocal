@@ -6,7 +6,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "pocal",
-    version = "2.236",
+    version = "2.449",
     description = "POCAL (Python Optical Coating Analysis Library)",
     long_description = long_description,
     long_description_content_type = "text/markdown",

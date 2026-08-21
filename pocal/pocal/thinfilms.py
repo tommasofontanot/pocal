@@ -184,7 +184,7 @@ class pocal:
     # separate the case in which the previous material is the 'immersion material' or a layer in the stack
 
             if l == 0:
-                M = self.N_medium
+                M = self.N_medium[index]
                 starting_angle = self.starting_angle_2
                 angle = np.arcsin((M/N)*np.sin(starting_angle))
 
@@ -220,9 +220,11 @@ class pocal:
 
     # take the last layer-substrate incident angle
 
-        angle = np.arcsin((N/(nr_substrate[index]- 1j*k_substrate[index]))*np.sin(angolini[-1]))
+        N_sub = nr_substrate[index] - 1j*k_substrate[index]
+        eta_sub_s = np.sqrt(N_sub**2 - (self.N_medium[index]*np.sin(self.starting_angle_2))**2)
+        angle = np.arccos(eta_sub_s/N_sub)
 
-        substrate_s = np.array([[1],[(nr_substrate[index]- 1j*k_substrate[index])*np.cos(angle)*self.admitt]])
+        substrate_s = np.array([[1],[eta_sub_s*self.admitt]])
 
         final_s = final_s@substrate_s
 
@@ -421,7 +423,7 @@ class pocal:
 
 
             if l == 0:
-                M = self.N_medium
+                M = self.N_medium[index]
                 starting_angle = self.starting_angle_2
                 angle = np.arcsin((M/N)*np.sin(starting_angle))
 
@@ -453,9 +455,11 @@ class pocal:
 
         nr_substrate, k_substrate =   self.search_from_nr_k_generator(self.nr_k_array,self.prescription[-1,0]) 
 
-        angle = np.arcsin((N/(nr_substrate[index]- 1j*k_substrate[index]))*np.sin(angolini[-1]))
+        N_sub = nr_substrate[index] - 1j*k_substrate[index]
+        eta_sub_s = np.sqrt(N_sub**2 - (self.N_medium[index]*np.sin(self.starting_angle_2))**2)
+        angle = np.arccos(eta_sub_s/N_sub)
 
-        substrate_p = np.array([[1],[(nr_substrate[index]- 1j*k_substrate[index])/np.cos(angle)*self.admitt]])
+        substrate_p = np.array([[1],[N_sub**2/eta_sub_s*self.admitt]])
         final_p = final_p@substrate_p
 
         B_p = final_p[0]
